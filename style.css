@@ -37,12 +37,16 @@ body{
 .hero h2{
     font-size: 3rem;
     margin-bottom: 15px;
+    
+}
+p{
+    font-size: 1rem;
+    margin-bottom: 8px;
 }
 /*seccion de productos*/
 .featured-products{
     padding: 50px;
     text-align: center;
-
 }
 .product-list{
     display: flex;
@@ -58,4 +62,17 @@ body{
     height: 200px;
     object-fit: cover;
     margin-bottom: 15px;
+}
+/*Estilos del pie de pagina*/
+footer{
+    background-color: gray;
+    color: rgb(180, 12, 12);
+    text-align: center;
+    padding: 10px 0;
+}
+.miembros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
 }
