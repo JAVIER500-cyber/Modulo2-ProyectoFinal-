@@ -20,5 +20,12 @@ body{
 }
 .nav-links li{
     margin-left: 20px;
-    
+}
+.hero{
+    background-image: url("https://barbusiness.es/wp-content/uploads/2023/03/Foto-Cafe%CC%81-Bar-Business11.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 5% 0;
 }
