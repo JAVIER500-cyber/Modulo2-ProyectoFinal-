@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Mi Cafetería</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -13,32 +16,36 @@
                 <h1>Mi Cafetería</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li> <a href="#">Inicio</a> </li>
+                <li> <a href="#" onclick="redirigir('menu.html')">Menú</a> </li>
+                <li> <a href="#equipo">Nosotros</a> </li>
+                <li> <a href="#">Contacto</a> </li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-content">
-            <h2>El mejor acompañante de tu mañana</h2>
-            <p>Permitete un momento.</p>
-            <button>Ver Menú</button>
+            <h2>EL MEJOR ACOMPAÑANTE DE TU MAÑANA</h2>
+            <p>PERMITETE UN MOMENTO</p>
+            <div class="contenedor-boton">
+                <button class="boton-menu">Ver Menú</button>
+            </div>
         </div>
     </section>
 
     <section class="featured-products">
-        <h2>Nuestros productos destacados</h2>
+        <h2>Nuestros productos</h2>
         <div class="product-list">
             <div class="product">
-                <img src="https://excelso77.com/wp-content/uploads/2024/05/por-que-el-cafe-americano-se-llama-asi-te-lo-contamos.webp" alt="Café 1">
+                <img src="https://excelso77.com/wp-content/uploads/2024/05/por-que-el-cafe-americano-se-llama-asi-te-lo-contamos.webp"
+                    alt="Café 1">
                 <h3>Café Americano</h3>
                 <p>Un clásico para comenzar el día.</p>
             </div>
             <div class="product">
-                <img src="https://fibraclim.com/blog/wp-content/uploads/2022/04/como-hacer-un-capuchino.jpg" alt="Café 2">
+                <img src="https://fibraclim.com/blog/wp-content/uploads/2022/04/como-hacer-un-capuchino.jpg"
+                    alt="Café 2">
                 <h3>Cappuccino</h3>
                 <p>Espresso con leche cremosa.</p>
             </div>
@@ -48,58 +55,101 @@
                 <p>Espresso con leche al vapor.</p>
             </div>
             <div class="product">
-                <img src="https://cdn.shopify.com/s/files/1/0089/6352/2607/files/Img-Blog-Bubble-Tea_480x480.jpg?v=1652905998" alt="Café 4">
-                <h3>Boba tea</h3>
-                <p>Espresso con leche dulce.</p>
+                <img src="https://cdn.shopify.com/s/files/1/0089/6352/2607/files/Img-Blog-Bubble-Tea_480x480.jpg?v=1652905998"
+                    alt="Café 4">
+                <h3>Te boba</h3>
+                <p>Comienza con tu boba loca.</p>
             </div>
         </div>
     </section>
-    <section class="trabajadores">
-        <div class="trabajadores-content">
-            <h2>PERSONAL</h2>
-        </div>
-    </section>
-<section class="miembros">
-    <h2>Nuestro personal destacados</h2>
-    <div class="miembros-list">
-        <div class="compas">
-            <img src="https://blog.uvm.mx/hs-fs/hubfs/Blog_Contenido/UG/dia-del-chef-en-mexico-2.jpg?width=800&height=600&name=dia-del-chef-en-mexico-2.jpg" alt="Compa 1">
-            <h3>Mario</h3>
-            <p>Chef</p>
-        </div>
-        <div class="compas">
-            <img src="https://humancenter.com.mx/wp-content/uploads/2024/09/examen-para-guardia-de-seguridad.jpg" alt="Compa 2">
-            <h3>Nico</h3>
-            <p>Guardia</p>
-        </div>
-        <div class="compas">
-            <img src="https://cdn.euroinnova.edu.es/img/subidasEditor/134-1648666849.webp" alt="Compa 3">
-            <h3>Marco</h3>
-            <p>Contador</p>
-        </div>
-        <div class="compas">
-            <img src="https://www.antroentucasa.com.mx/assets/img/meseros/mesero.webp" alt="Compa 4">
-            <h3>Mauricio</h3>
-            <p>Mesero</p>
-        </div>
-    </div>
-</section>
-    <footer>
-        <div class="foot">
-            <div class="social-media">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
-            <div class="noticias">
-                <h3>Siguenos para mas</h3>
-                <form action="">
-                    <input type="email" placeholder="ingresa tu numero">
-                    <button type="submit">Ingresar numero</button>
-                </form>
 
+    <section class="postres">
+        <h2>Postres</h2>
+        <div class="postri">
+            <div class="postre">
+                <img src="https://i.blogs.es/9f3d40/copia-de-portada---2024-05-20t100348.958/1366_2000.jpg"
+                    alt="pay de limon">
+                <h3>Pay de limon</h3>
+                <p>Descubre el maravilloso sabor que que hara que vuelvas a tus recuerdos mas lindos con solo probarlo</p>
             </div>
+            <div class="postre">
+                <img src="https://www.azucardominomex.com/sites/azucardominomex_com/files/styles/large/public/2022-09/600x336_PASTEL-DE-CHOCOLATE-BRUCE.jpg.webp?itok=gMt0Iw-P"
+                    alt="pastel matilda">
+                <h3>Pastel matilda</h3>
+                <p>La receta posiblemente existiera desde mucho antes, pero desde 1996, cuando se estrenó la película Matilda (1996), protagonizada por Mara Wilson y dirigida por Danny DeVito, adoptó su nombre, la torta Matilda, también llamada torta Bruce</p>
+            </div>
+            <div class="postre">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYnLkCNHP5LAGkYyrMp7cSs7-kPGw6NafMmA&s"
+                    alt="Suspiro">
+                <h3>Suspiro de fresa</h3>
+                <p>El suspiro a la limeña es un postre peruano que se originó en Lima hace más de 100 años. Se dice que el poeta José Gálvez Barrenechea bautizó el postre con este nombre tras probarlo, ya que le pareció "suave y dulce como el suspiro de una mujer". </p>
+            </div>
+            <div class="postre">
+                <img src="https://aishlatino.b-cdn.net/wp-content/uploads/2021/12/Cheesecake-A-History-730_x_411.jpg">
+                <h3>Cheesecake</h3>
+                <p>El cheesecake, tarta o pastel de queso, tiene su origen en la antigua Grecia. A finales del siglo XIX se creó la New York cheesecake, una versión mundialmente reconocida que ha persistido con el pasar de los años y ha dado paso a este rico postre con muchas variaciones.</p>
+            </div>
+            <div class="postre">
+                <img src="https://cdn.unotv.com/images/2024/02/hotcakes-171906-1024x576.jpg"
+                    alt="hotcakes">
+                <h3>Hotcakes</h3>
+                <p>El término "hot cake" se originó en el siglo XIX, cuando se vendían versiones simples de harina de maíz en las ventas de pasteles de las iglesias.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="equipo">
+        <h2>Nosomos somos:</h2>
+
+        <div class="equipoM">
+
+            <div class="miembro">
+                <img src="https://cdn.pixabay.com/photo/2023/09/05/04/21/baker-8234232_1280.jpg"
+                    alt="">
+                <h3>Pedro</h3>
+                <p>Panadero</p>
+            </div>
+
+            <div class="miembro">
+                <img src="https://blog.linkaform.com/hubfs/responsabilidades_de_guardia_seguridad.jpg" alt="">
+                <h3>Mike</h3>
+                <p>Guardia</p>
+            </div>
+
+            <div class="miembro">
+                <img src="https://www.institutomaurer.com.mx/cursos/assets/images/mesero_profesional.jpg"
+                    alt="">
+                <h3>Jose David</h3>
+                <p>Mesero</p>
+            </div>
+
+            <div class="miembro">
+                <img src="https://www.grupovadeto.com/wp-content/uploads/2021/06/Descripcion-de-puesto-de-recepcionista-768x493.jpg" alt="">
+                <h3>Sofia</h3>
+                <p>Recepcionista</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="newsletter">
+                <h3>Carta de opiniones</h3>
+                <form>
+                    <input type="email" placeholder="Ingresa tu Numero" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <p>EL plaser de consentirte</p>
         </div>
     </footer>
+
+    <!--Enlazando archivo de JavaScript-->
+    <script src="main.js"></script>
 </body>
 </html>
